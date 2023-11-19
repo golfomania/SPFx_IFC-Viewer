@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "if-cviewer-client-side-solution",
+    "id": "104bdee6-92c7-425a-9f53-800ddd9a3d6f",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.18.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "IFCviewer description"
+      },
+      "longDescription": {
+        "default": "IFCviewer description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "if-cviewer Feature",
+        "description": "The feature that activates elements of the if-cviewer solution.",
+        "id": "e0c10748-47f1-4f8d-b16d-8aa6616c6cb1",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/if-cviewer.sppkg"
+  }
+}

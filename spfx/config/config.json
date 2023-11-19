@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "if-cviewer-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/ifCviewer/IfCviewerWebPart.js",
+          "manifest": "./src/webparts/ifCviewer/IfCviewerWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "IfCviewerWebPartStrings": "lib/webparts/ifCviewer/loc/{locale}.js"
+  }
+}
