@@ -61,3 +61,14 @@ mainToolbar.addChild(
   propertiesProcessor.uiElement.get("main")
 );
 viewer.ui.addToolbar(mainToolbar);
+
+// custom event listener
+window.addEventListener("loadIFC", async (event: any) => {
+  const { name, payload } = event.detail;
+  if (name === "loadIFC") {
+    const { name, buffer } = payload;
+    const model = await ifcLoader.load(buffer, name);
+    const scene = viewer.scene.get();
+    scene.add(model);
+  }
+});
